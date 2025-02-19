@@ -1,13 +1,9 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useCallback, useState } from "react";
 import { MenuMobile } from "./Menu";
 import Image from "next/image";
 
 export const Header = () => {
-  const router = useRouter();
-  const isLoginPage = router.pathname === '/LoginPage';
-  const isUserPage = router.pathname === '/UserPage';
   const [menuOpen, setMenuOpen] = useState(false);
 
   const openMenu = useCallback(() => {
@@ -38,7 +34,7 @@ export const Header = () => {
           <Link href="/">
             <p className="text-white hover:text-orange-400 transition duration-300">Sobre o Esporte</p>
           </Link>
-          <Link href="/competitions">
+          <Link href="/Competitions">
             <p className="text-white hover:text-orange-400 transition duration-300">Principais Competições</p>
           </Link>
         </nav>
@@ -55,7 +51,7 @@ export const Header = () => {
 
       {/* Menu Mobile */}
       {menuOpen && (
-        <MenuMobile isUserPage={isUserPage} isLoginPage={isLoginPage} isVisible={menuOpen} onClose={closeMenu} />
+        <MenuMobile isVisible={menuOpen} onClose={closeMenu} />
       )}
     </header>
 

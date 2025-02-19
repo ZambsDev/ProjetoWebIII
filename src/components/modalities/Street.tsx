@@ -6,7 +6,7 @@ interface StreetProps {
 
 export default function Street({children}: StreetProps) {
     return (
-        <div className="flex flex-col w-full items-center justify-center bg-white shadow-lg rounded-lg px-4 sm:px-6 sm:py-4 lg:px-8">
+        <div className="flex flex-col w-full items-center justify-center px-4 sm:px-6 sm:py-4 lg:px-8">
             <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-center text-black pb-5">Street</h2>
             <div className="w-full text-sm sm:text-base md:text-lg text-black break-words leading-relaxed">
                     <p>

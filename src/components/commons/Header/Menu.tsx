@@ -1,14 +1,12 @@
 import Link from "next/link";
 
 interface MenuMobileProps {
-    isLoginPage: boolean;
-    isUserPage: boolean;
     isVisible: boolean;
     onClose: () => void;
 }
 
 
-export const MenuMobile = ({ isLoginPage, isUserPage, isVisible, onClose }: MenuMobileProps) => {
+export const MenuMobile = ({isVisible, onClose }: MenuMobileProps) => {
     return (
         <div className={`${isVisible ? 'flex' : 'invisible'} fixed inset-0 w-full h-full backdrop-blur-sm`}>
             <nav className="md:hidden text-2xl bg-gray-800 shadow-md absolute w-full pt-[18rem] py-4 space-y-2 text-center">
