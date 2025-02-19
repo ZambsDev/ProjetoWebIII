@@ -37,6 +37,12 @@ export const Header = () => {
           <Link href="/Competitions">
             <p className="text-white hover:text-orange-400 transition duration-300">Principais Competições</p>
           </Link>
+          <Link href="/Athletes">
+            <p className="text-white hover:text-orange-400 transition duration-300">Atletas</p>
+          </Link>
+          <Link href="/Equipament">
+            <p className="text-white hover:text-orange-400 transition duration-300">Equipamentos</p>
+          </Link>
         </nav>
 
         {/* Botão do Menu Mobile */}
