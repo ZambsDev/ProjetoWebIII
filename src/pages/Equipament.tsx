@@ -104,13 +104,6 @@ export default function Equipament() {
                 </li>
               </ol>
             </p>
-            <Image
-              src="/skateStructure.png"
-              alt="Estrutura do Skate"
-              width={1504}
-              height={575}
-              className="rounded-lg border-4 border-black max-w-full h-auto"
-            />
           </div>
         </div>
       </main>
